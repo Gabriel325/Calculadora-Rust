@@ -23,19 +23,24 @@ fn main() {
 
         match operacao {
             "+" => {
-                println!("A soma de {} por {} é {}", n1, n2, n1 + n2);
+                let nr = n1 + n2;
+                println!("A soma de {} por {} é {}", n1, n2, nr);
             }
             "-" => {
-                println!("A subtração de {} por {} é {}", n1, n2, n1 - n2);
+                let nr = n1 - n2;
+                println!("A subtração de {} por {} é {}", n1, n2, nr);
             }
             "/" => {
-                println!("A divisão de {} por {} é {}", n1, n2, n1 / n2);
+                let nr = n1 / n2;
+                println!("A divisão de {} por {} é {}", n1, n2, nr);
             }
             "x" => {
-                println!("A multiplicação de {} por {} é {}", n1, n2, n1 * n2);
+                let nr = n1 * n2;
+                println!("A multiplicação de {} por {} é {}", n1, n2, nr);
             }
             "potencia" => {
-                println!("A potência de {} por {} é {}", n1, n2, n1.powf(n2));
+                let nr = n1.powf(n2);
+                println!("A potência de {} por {} é {}", n1, n2, nr);
             }
             _ => {
                 println!("Resultado: 0.0");
@@ -49,15 +54,16 @@ fn main() {
 
         match operacao {
             "raiz" => {
-                println!("A raiz quadrada de {} é {}", n1, n1.sqrt());
+                let nr = n1.sqrt();
+                println!("A raiz quadrada de {} é {}", n1, nr);
             }
             "seno" => {
-                let n2 = (n1.to_radians()).sin();
-                println!("O seno de {} é {}", n1, format!("{:.2}", n2));
+                let nr = (n1.to_radians()).sin();
+                println!("O seno de {} é {}", n1, format!("{:.2}", nr));
             }
             "cosseno" => {
-                let n2 = (n1.to_radians()).cos();
-                println!("O cosseno de {} é {}", n1, format!("{:.2}", n2));
+                let nr = (n1.to_radians()).cos();
+                println!("O cosseno de {} é {}", n1, format!("{:.2}", nr));
             }
             _ => {
                 println!("Resultado: 0.0");
